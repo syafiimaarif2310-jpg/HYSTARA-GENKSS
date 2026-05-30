@@ -1,0 +1,292 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+  background: #f9fafc;
+  color: #333;
+}
+
+/* HEADER */
+/* Header */
+.hero{
+    height:100vh;
+
+    /* GANTI URL GAMBAR DI SINI */
+    background-image:url('123.jpeg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:rgb(255, 254, 254);
+    padding:20px;
+}
+
+.overlay h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.overlay p{
+    font-size:1.2rem;
+    max-width:700px;
+    margin-bottom:25px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .overlay h1{
+        font-size:2.5rem;
+    }
+
+    .overlay p{
+        font-size:1rem;
+    }
+}
+.halaman-baru{
+    padding: 80px 10%;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+
+/* Navbar */
+.navbar{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#f7f8fc,#ecedee);
+}
+.halaman-baru h2{
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.halaman-baru p{
+    font-size: 18px;
+    color: #666;
+}
+/* Navbar */
+.navbar{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.brand{
+    color:white;
+    font-size:28px;
+    font-weight:700;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:rgb(12, 12, 12);
+    font-size:17px;
+    position:relative;
+    padding:5px 0;
+}
+
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0;
+    height:3px;
+    background:rgb(17, 17, 17);
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.menu a:hover::after{
+    width:100%;
+}
+
+.menu a:hover{
+    color:#0a0a0a;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CONTAINER */
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* ABOUT */
+.about{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about h2{
+  color: #1f1d1e;
+  margin-bottom: 15px;
+}
+
+/* UPLOAD */
+.upload-section{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+input[type="file"]{
+  margin-top: 15px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:15px;
+}
+
+
+.card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+}
+
+
+
+.text{
+  padding: 15px;
+}
+
+.text h3{
+  color: #1f1d1e;
+  margin-bottom: 10px;
+}
+
+/* SOCIAL MEDIA */
+.social-media{
+    padding: 60px 20px;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.social-media h2{
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instagram{
+    background: linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+    );
+}
+
+.tiktok{
+    background: #000;
+}
+
+.social-links a:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* FOOTER */
+footer{
+  background: #2b2929;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
